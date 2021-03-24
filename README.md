@@ -16,8 +16,8 @@ It will be used to provide non repudiation capabilities to the Shark Algorithmic
 4. Open a terminal, and run:
 ```
 git clone https://github.com/danielneil/Blacktip.git && cd Blacktip && ./build.sh
-
 ```
+
 5. Navigate to http://debian-server-ip/blacktip (web credentials are blacktip/blacktip).
 
 # Usage (cli) e.g.
