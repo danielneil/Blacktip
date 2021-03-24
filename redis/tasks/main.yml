@@ -1,2 +1,14 @@
 ---
 # tasks file for redis
+
+- name: Installing Redis Server
+  apt:
+   name: redis
+   state: latest
+
+- name: Installing redis client tools
+  apt: 
+   name: redis-tools
+   state: latest
+   
+   
