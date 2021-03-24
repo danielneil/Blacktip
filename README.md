@@ -20,19 +20,19 @@ git clone https://github.com/danielneil/Blacktip.git && cd Blacktip && ./build.s
 
 5. Navigate to http://debian-server-ip/blacktip (web credentials are blacktip/blacktip).
 
-# Usage (cli) e.g.
+# Usage (blacktip-cli) e.g.
 
 ```
 # Create a blockchain
-./blacktip --createBlockChain MyBlockChain 
+./blacktip-cli --createBlockChain MyBlockChain 
 
 # Create a block
-./blacktip --createBlock MyBlock --blockChain MyBlockChain
+./blacktip-cli --createBlock MyBlock --blockChain MyBlockChain
 
 # Add data inside block 
-./blacktip --addData "someDataFile.txt" --block MyBlock 
+./blacktip-cli --addData "someDataFile.txt" --block MyBlock 
 
 # Create a block
 
-# Just making up words.
+# Just making up words.........
 ```
