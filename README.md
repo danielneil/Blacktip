@@ -20,19 +20,11 @@ git clone https://github.com/danielneil/Blacktip.git && cd Blacktip && ./build.s
 
 5. Navigate to http://debian-server-ip/blacktip (web credentials are blacktip/blacktip).
 
-# Usage (blacktip-cli) e.g.
 
+# CURL Usage (using curl) e.g.
 ```
-# Create a blockchain
-./blacktip-cli --createBlockChain MyBlockChain 
-
-# Create a block
-./blacktip-cli --createBlock MyBlock --blockChain MyBlockChain
-
-# Add data inside block 
-./blacktip-cli --addData "someDataFile.txt" --block MyBlock 
-
-# Create a block
-
-# Just making up words.........
+curl -XPOST "http://localhost:8888/blockchain/binary_file" -d '
+{
+    "attachment" : '`base64 /path/filename | perl -pe 's/\n/\\n/g'`'
+}'
 ```
