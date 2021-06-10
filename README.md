@@ -19,9 +19,21 @@ git clone https://github.com/danielneil/Blacktip.git && cd Blacktip && ./build.s
 
 
 # CURL Usage (using curl) e.g.
+
+## Submit a binary file.
+
 ```
 curl -XPOST "http://localhost:8888/blockchain/binary_file" -d '
 {
     "attachment" : '`base64 /path/filename | perl -pe 's/\n/\\n/g'`'
+}'
+```
+
+## Submit a message.
+
+```
+curl -XPOST "http://localhost:8888/blockchain/binary_file" -d '
+{
+    "message" : 'This is a message that I want entered into the block chain'
 }'
 ```
